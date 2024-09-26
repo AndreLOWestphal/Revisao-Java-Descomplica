@@ -11,6 +11,7 @@ public class Funcionamento {
     public static void ligarAutomovel(Automoveis automovel){
         SobreAutomovel.verificarCambio(automovel);
         SobreAutomovel.verificarOleo(automovel);
+        //SobreAutomovel.verificarCodChave(automovel);
     }
 
     public static void desligarAutomovel(Automoveis automovel){
@@ -26,7 +27,8 @@ public class Funcionamento {
     }
 
     public static void regularArCondicionado(Automoveis automovel){
-        try {Scanner valor = new Scanner(System.in);
+        try {
+            Scanner valor = new Scanner(System.in);
             System.out.println("Digite o valor desejado: ");
             int n = valor.nextInt();
             System.out.println("Temperatura regulada para " + n + ".");

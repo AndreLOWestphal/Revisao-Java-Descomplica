@@ -14,14 +14,22 @@ public class SobreAutomovel {
 
     public static void verificarOleo(Automoveis automovel){
         if(automovel.getOleoMotor().equals("baixo")){
-            System.out.println("O carro não pode ligar. Oleo do motor baixo!");
-            System.out.println("Desligado");
+            System.out.println("O carro não pode ligar. Óleo do motor baixo!");
+            System.out.println("Carro desligado");
         }else if(automovel.getOleoMotor().equals("medio")){
             System.out.println("O carro pode ligar. Oleo do motor medio com risco!.. Ligando!");
-            System.out.println("Ligado");
+            System.out.println("Carrro ligado");
         }else {
             System.out.println("Oleo no nivel... Ligando");
-            System.out.println("Ligado");
+            System.out.println("Carro ligado");
         }
     }
+
+    /*public static void verificarCodChave(Chaves chave, Automoveis automovel){
+        if(chave.getCodChave == automovel.getCodCarroChave()){
+            System.out.println("Chave verificada. Iniciando demais verificações!");
+        }else{
+            System.out.println("Chave incorreta, impossivel ligar veiculo!");
+        }
+    }*/
 }
